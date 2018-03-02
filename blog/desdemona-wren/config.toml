@@ -1,5 +1,5 @@
 title = "Desdemona Wren"
-baseURL = "https://desdemonawren.com/blog"
+baseURL = "/blog"
 theme = "bilberry-hugo-theme"
 
 enableRobotsTXT = true
@@ -15,7 +15,8 @@ DefaultContentLanguage = "en"
 
 [params]
   # Favicon for the browser's favorites and tabs
-  favicon = "" # set a favicon icon
+  #favicon = "" # set a favicon icon
+  baseURL = "/blog"
 
   # Custom CSS / JS modules that will be imported by the template.
   # Files are relative to the static/ directory or a URL.
@@ -46,7 +47,7 @@ DefaultContentLanguage = "en"
     subtitle = "LGBTQIA+ Novelist"
 
     # if you want to use gravatar for the header image
-    gravatarEMail = ""
+    #gravatarEMail = ""
 
     # set an path to the image file you want to use | overwrites gravatar
     customImage = "images/icon.png"
