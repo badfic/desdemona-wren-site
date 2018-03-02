@@ -1,0 +1,865 @@
+@charset "UTF-8";
+.bilberry-hugo-theme {
+  background-color: #f1f1f1;
+  font-family: "Lato", sans-serif;
+  color: #222;
+  font-size: 16px;
+  /* do not group these rules */
+}
+
+.bilberry-hugo-theme h1, .bilberry-hugo-theme h2, .bilberry-hugo-theme h3, .bilberry-hugo-theme h4, .bilberry-hugo-theme h5, .bilberry-hugo-theme h6, .bilberry-hugo-theme .title, .bilberry-hugo-theme .subtitle {
+  font-family: "Raleway", "Helvetica Neue", sans-serif;
+}
+
+.bilberry-hugo-theme a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.bilberry-hugo-theme a:hover {
+  color: #5c8b59;
+}
+
+.bilberry-hugo-theme .hljs {
+  padding: 0.75em;
+  font-size: 0.9em;
+}
+
+.bilberry-hugo-theme .container {
+  width: 800px;
+}
+
+.bilberry-hugo-theme *::-webkit-input-placeholder {
+  color: #d8d8d8;
+}
+
+.bilberry-hugo-theme *:-moz-placeholder {
+  /* FF 4-18 */
+  color: #d8d8d8;
+}
+
+.bilberry-hugo-theme *::-moz-placeholder {
+  /* FF 19+ */
+  color: #d8d8d8;
+}
+
+.bilberry-hugo-theme *:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #d8d8d8;
+}
+
+.bilberry-hugo-theme nav {
+  background: #2C3E50;
+  color: #f1f1f1;
+  display: none;
+}
+
+.bilberry-hugo-theme nav.permanentTopNav {
+  display: block;
+}
+
+.bilberry-hugo-theme nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25em 0;
+  min-height: 65px;
+}
+
+.bilberry-hugo-theme nav ul {
+  list-style: none;
+  display: block;
+  margin: 0;
+  max-width: 500px;
+}
+
+.bilberry-hugo-theme nav ul li {
+  margin-bottom: 0;
+  float: left;
+}
+
+.bilberry-hugo-theme nav ul li a {
+  display: flex;
+  padding: 1em 1.5em;
+  text-align: center;
+}
+
+.bilberry-hugo-theme nav ul li a:hover {
+  color: inherit;
+  background-color: #3e5871;
+}
+
+.bilberry-hugo-theme nav .search {
+  margin-left: auto;
+  width: 45%;
+  min-width: 300px;
+  position: relative;
+}
+
+.bilberry-hugo-theme nav .search input {
+  font-family: "Lato", sans-serif;
+}
+
+.bilberry-hugo-theme nav .search i {
+  position: absolute;
+  left: 1em;
+  top: 10px;
+  z-index: 40;
+}
+
+.bilberry-hugo-theme nav .search input {
+  margin: 0;
+  background: transparent;
+  border: none;
+  color: #f1f1f1;
+  padding-left: 2.75em;
+  width: 100%;
+  background-color: #354b60;
+}
+
+.bilberry-hugo-theme nav .search input:hover, .bilberry-hugo-theme nav .search input:focus {
+  background-color: #3e5871;
+  border: none;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete {
+  width: 100%;
+  color: #444;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete .aa-dropdown-menu {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete .aa-dropdown-menu .empty {
+  padding: 0.5em 1em;
+  display: block;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete .aa-dropdown-menu .branding {
+  font-size: 0.75em;
+  text-align: right;
+  padding: 0.5em 1em;
+  background-color: #f1f1f1;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete .aa-dropdown-menu .branding img {
+  width: 3.5em;
+  position: relative;
+  top: 0.1em;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete .aa-suggestion span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete .aa-suggestion span:hover, .bilberry-hugo-theme nav .search .algolia-autocomplete .aa-suggestion span:focus {
+  background-color: whitesmoke;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete .aa-suggestion span .title {
+  max-width: 315px;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete .aa-suggestion span.entry.category .title, .bilberry-hugo-theme nav .search .algolia-autocomplete .aa-suggestion span.entry.tag .title, .bilberry-hugo-theme nav .search .algolia-autocomplete .aa-suggestion span.entry.author .title {
+  text-transform: capitalize;
+}
+
+.bilberry-hugo-theme nav .search .algolia-autocomplete .aa-suggestion span .fa {
+  font-size: 1em;
+  color: #888;
+  text-align: right;
+}
+
+.bilberry-hugo-theme nav .search .aa-input-container {
+  display: inline-block;
+  position: relative;
+}
+
+.bilberry-hugo-theme nav .search .aa-input-search {
+  width: 300px;
+  padding: 12px 28px 12px 12px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.bilberry-hugo-theme nav .search .aa-input-search::-webkit-search-decoration, .bilberry-hugo-theme nav .search .aa-input-search::-webkit-search-cancel-button,
+.bilberry-hugo-theme nav .search .aa-input-search::-webkit-search-results-button, .bilberry-hugo-theme nav .search .aa-input-search::-webkit-search-results-decoration {
+  display: none;
+}
+
+.bilberry-hugo-theme nav .search .aa-input-icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  fill: #e4e4e4;
+  pointer-events: none;
+}
+
+.bilberry-hugo-theme nav .search .aa-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid rgba(228, 228, 228, 0.6);
+  min-width: 300px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.bilberry-hugo-theme nav .search .aa-suggestion {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.bilberry-hugo-theme nav .search .aa-suggestion + .aa-suggestion {
+  border-top: 1px solid rgba(228, 228, 228, 0.6);
+}
+
+.bilberry-hugo-theme nav .search .aa-suggestions-category {
+  border-bottom: 1px solid rgba(228, 228, 228, 0.6);
+  border-top: 1px solid rgba(228, 228, 228, 0.6);
+  padding: 6px 12px;
+}
+
+.bilberry-hugo-theme header {
+  background-color: #EB5974;
+  color: #f1f1f1;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+}
+
+.bilberry-hugo-theme header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.bilberry-hugo-theme header .container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.bilberry-hugo-theme header .logo {
+  font-size: 40pt !important;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border: 5px #eeeeee solid;
+  position: relative;
+  color: #eeeeee;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bilberry-hugo-theme header .logo a {
+  border: 0;
+}
+
+.bilberry-hugo-theme header .logo:hover .overlay {
+  opacity: 1;
+}
+
+.bilberry-hugo-theme header .logo img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.bilberry-hugo-theme header .logo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #5c8b59;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.bilberry-hugo-theme header .titles {
+  margin-left: 3rem;
+}
+
+.bilberry-hugo-theme header .titles h3 {
+  margin-bottom: 0;
+}
+
+.bilberry-hugo-theme header .toggler {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #2C3E50;
+  padding: 0.375em 0.75em;
+  font-size: 1.125em;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+}
+
+.bilberry-hugo-theme header .toggler.permanentTopNav {
+  display: none;
+}
+
+.bilberry-hugo-theme .main {
+  margin-bottom: 5em;
+  min-height: 50vh;
+}
+
+.bilberry-hugo-theme .main:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  width: 2px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.bilberry-hugo-theme .main:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 41px;
+  bottom: 32px;
+  height: 20px;
+  width: 20px;
+  background: #DDD;
+  border-radius: 999px;
+  z-index: 10;
+}
+
+.bilberry-hugo-theme .main .article-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+  min-height: 90px;
+  position: relative;
+}
+
+.bilberry-hugo-theme .main .article-wrapper.single {
+  padding-bottom: 2.5em;
+}
+
+.bilberry-hugo-theme .main .article-wrapper .bubble {
+  position: absolute;
+  left: 25px;
+  top: 85px;
+  background-color: #ccc;
+  border: 3px solid #fff;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 10;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.bilberry-hugo-theme .main .article-wrapper .bubble .fa {
+  font-size: 15pt;
+}
+
+.bilberry-hugo-theme .main .article-wrapper .bubble:hover {
+  background-color: #5c8b59;
+}
+
+.bilberry-hugo-theme article {
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  position: relative;
+}
+
+.bilberry-hugo-theme article:before {
+  content: "";
+  display: block;
+  border: 11px solid transparent;
+  border-right-color: #ddd;
+  position: absolute;
+  top: 49px;
+  left: -22px;
+}
+
+.bilberry-hugo-theme article:after {
+  content: "";
+  display: block;
+  border: 10px solid transparent;
+  border-right-color: #FFF;
+  position: absolute;
+  top: 50px;
+  left: -20px;
+}
+
+.bilberry-hugo-theme article .featured-image {
+  width: 100%;
+}
+
+.bilberry-hugo-theme article .featured-image img {
+  width: 100%;
+}
+
+.bilberry-hugo-theme article .content {
+  padding: 2em;
+}
+
+.bilberry-hugo-theme article .content h3 {
+  font-size: 2.0em;
+  margin-bottom: 0.25em;
+}
+
+.bilberry-hugo-theme article .content h3 a {
+  font-style: normal;
+}
+
+.bilberry-hugo-theme article .content .meta {
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-size: 0.825em;
+  color: #999;
+  padding-bottom: 2.5%;
+  border-bottom: 3px double #eee;
+  margin-bottom: 4.5%;
+}
+
+.bilberry-hugo-theme article .content .meta a {
+  font-style: normal;
+}
+
+.bilberry-hugo-theme article .content .meta .categories:before, .bilberry-hugo-theme article .content .meta .author:before {
+  content: " / ";
+  margin: 0 1rem;
+}
+
+.bilberry-hugo-theme article .content .meta .categories a:not(:last-child):after, .bilberry-hugo-theme article .content .meta .author a:not(:last-child):after {
+  content: ", ";
+}
+
+.bilberry-hugo-theme article .content a {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.bilberry-hugo-theme article .content a.more {
+  display: block;
+  margin: 2.5rem 0;
+  margin-bottom: 1rem;
+  color: #5c8b59;
+  font-size: 1.125em;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.bilberry-hugo-theme article .content a.more:hover {
+  color: #999;
+}
+
+.bilberry-hugo-theme article .content blockquote {
+  background-color: #f6f6f6;
+  font-family: "Raleway", "Helvetica Neue", sans-serif;
+  margin: 1.5em 0;
+  padding: 2em;
+  border-left: 0.5em solid #ededed;
+  font-size: 1.1em;
+}
+
+.bilberry-hugo-theme article .content blockquote cite {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.bilberry-hugo-theme article .content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.bilberry-hugo-theme article .tags {
+  background: rgba(235, 89, 116, 0.1);
+  padding: 1em 2em;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.bilberry-hugo-theme article .tags a:not(:last-child):after {
+  content: " / ";
+  color: #222 !important;
+}
+
+.bilberry-hugo-theme article.quote {
+  background-color: #2C3E50;
+}
+
+.bilberry-hugo-theme article.quote:after {
+  border-right-color: #2C3E50;
+}
+
+.bilberry-hugo-theme article.quote a:hover {
+  color: inherit;
+  font-size: 1.1em;
+}
+
+.bilberry-hugo-theme article.quote .featured-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0.25;
+}
+
+.bilberry-hugo-theme article.quote blockquote {
+  padding: 5.5%;
+  margin: 0;
+  text-align: center;
+  color: #FFF;
+  background: none;
+  font-size: 1.2em;
+  position: relative;
+  z-index: 10;
+}
+
+.bilberry-hugo-theme article.quote blockquote p {
+  line-height: 170%;
+  font-size: 1.10em;
+}
+
+.bilberry-hugo-theme article.quote blockquote cite {
+  font-family: "Raleway", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 140%;
+  font-size: 0.725em;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.bilberry-hugo-theme article.quote blockquote cite:before {
+  content: "— ";
+}
+
+.bilberry-hugo-theme article.gallery .flexslider {
+  margin: 0;
+  border: 0;
+}
+
+.bilberry-hugo-theme article.gallery .flexslider .flex-direction-nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bilberry-hugo-theme article.gallery .flexslider .flex-direction-nav a:before {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bilberry-hugo-theme article.video .responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 ratio*/
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
+}
+
+.bilberry-hugo-theme article.video .responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bilberry-hugo-theme article.audio .responsive-audio iframe {
+  width: 100%;
+}
+
+.bilberry-hugo-theme article.link {
+  background-color: #2C3E50;
+  min-height: 7em;
+}
+
+.bilberry-hugo-theme article.link:after {
+  border-right-color: #2C3E50;
+}
+
+.bilberry-hugo-theme article.link:hover {
+  background-color: #5c8b59;
+  transition: all 0.3s ease-in-out;
+}
+
+.bilberry-hugo-theme article.link:hover:after {
+  border-right-color: #5c8b59;
+  transition: all 0.3s ease-in-out;
+}
+
+.bilberry-hugo-theme article.link .featured-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0.25;
+}
+
+.bilberry-hugo-theme article.link a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.bilberry-hugo-theme article.link a h4 {
+  font-variant: small-caps;
+  font-size: 2em;
+  margin: 2rem;
+}
+
+.bilberry-hugo-theme article.link a p {
+  margin: 2em;
+  margin-top: 0;
+}
+
+.bilberry-hugo-theme #disqus_thread {
+  margin-left: 100px;
+  padding-bottom: 1.2em;
+}
+
+.bilberry-hugo-theme .paginator {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 75px;
+  padding-bottom: 1em;
+}
+
+.bilberry-hugo-theme .paginator .fa {
+  margin: 0 0.25em;
+}
+
+.bilberry-hugo-theme .paginator a {
+  border-radius: 4px;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #B4B4B4;
+  color: #fff;
+}
+
+.bilberry-hugo-theme .paginator a:hover {
+  background-color: #5c8b59;
+  transition: all 0.3s ease-in-out;
+}
+
+.bilberry-hugo-theme .paginator a.older {
+  margin-right: auto;
+}
+
+.bilberry-hugo-theme .paginator a.newer {
+  margin-left: auto;
+}
+
+.bilberry-hugo-theme footer {
+  border-top: 3px solid #eee;
+  border-bottom: 3px solid #eee;
+  background-color: #ffffff80;
+}
+
+.bilberry-hugo-theme footer .container {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  font-family: "Raleway", "Helvetica Neue", sans-serif;
+}
+
+.bilberry-hugo-theme footer .container div {
+  width: 30%;
+}
+
+.bilberry-hugo-theme footer .container div:not(:first-child) {
+  margin-left: 5%;
+}
+
+.bilberry-hugo-theme footer .container:after {
+  display: none;
+}
+
+.bilberry-hugo-theme footer .container strong {
+  text-transform: uppercase;
+  color: #444;
+  padding-bottom: 0.75em;
+}
+
+.bilberry-hugo-theme footer .container ul {
+  list-style: none;
+  margin-top: 1.25em;
+}
+
+.bilberry-hugo-theme footer .container ul li {
+  border-bottom: 1px solid #eee;
+}
+
+.bilberry-hugo-theme footer .container ul a {
+  padding-left: 0;
+  display: inline-block;
+  transition: padding-left 0.3s ease-in-out;
+  color: #5c8b59;
+  font-family: "Lato", sans-serif;
+}
+
+.bilberry-hugo-theme footer .container ul a:hover {
+  padding-left: 10px;
+  color: #EB5974;
+}
+
+.bilberry-hugo-theme footer .container .social-media strong {
+  display: block;
+}
+
+.bilberry-hugo-theme footer .container .social-media a {
+  font-size: 2em;
+  margin: 0 0.5rem;
+  color: #444;
+}
+
+.bilberry-hugo-theme footer .container .social-media a:hover {
+  color: #5c8b59;
+}
+
+.bilberry-hugo-theme .credits .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+  font-size: 0.8em;
+  color: #777;
+}
+
+.bilberry-hugo-theme .credits .container:after {
+  display: none;
+}
+
+@media (max-width: 834px) {
+  .bilberry-hugo-theme nav.permanentTopNav {
+    display: none;
+  }
+  .bilberry-hugo-theme nav .container {
+    flex-direction: column-reverse;
+    padding: 0 1.5em;
+  }
+  .bilberry-hugo-theme nav .container .topnav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+  .bilberry-hugo-theme nav .container .topnav li {
+    width: 100%;
+  }
+  .bilberry-hugo-theme nav .container .topnav a {
+    padding: 0.75em 0;
+    display: block;
+    width: 100%;
+  }
+  .bilberry-hugo-theme nav .container .search {
+    margin: 0.5em 1.5em;
+    width: 100%;
+  }
+  .bilberry-hugo-theme nav .container .search input {
+    width: 100%;
+  }
+  .bilberry-hugo-theme header {
+    width: 100%;
+  }
+  .bilberry-hugo-theme header .container {
+    padding: 0 1em;
+  }
+  .bilberry-hugo-theme header .toggler {
+    right: 1.5em;
+  }
+  .bilberry-hugo-theme header .toggler.permanentTopNav {
+    display: block;
+  }
+  .bilberry-hugo-theme .bubble {
+    display: none !important;
+  }
+  .bilberry-hugo-theme .container {
+    width: 100%;
+    padding: 0;
+  }
+  .bilberry-hugo-theme .container:before, .bilberry-hugo-theme .container:after {
+    display: none !important;
+  }
+  .bilberry-hugo-theme .main {
+    margin-bottom: 0;
+  }
+  .bilberry-hugo-theme .main article {
+    margin: 0;
+    width: 100%;
+  }
+  .bilberry-hugo-theme .main article:before, .bilberry-hugo-theme .main article:after {
+    display: none !important;
+  }
+  .bilberry-hugo-theme .main #disqus_thread {
+    margin: 0 1.5em;
+  }
+  .bilberry-hugo-theme .main .paginator {
+    margin: 1.5em;
+    margin-top: 50px;
+  }
+  .bilberry-hugo-theme footer .container {
+    padding: 4rem 1.5em;
+    flex-direction: column;
+    text-align: center;
+  }
+  .bilberry-hugo-theme footer .container div {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .bilberry-hugo-theme .credits .container {
+    padding: 4rem 1.5em;
+  }
+}
