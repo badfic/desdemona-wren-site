@@ -1,0 +1,30 @@
+{
+  "title": "Desdemona Wren",
+  "theme": "bilberry-hugo-theme",
+  "enableRobotsTXT": true,
+  "DefaultContentLanguage": "en",
+  "params": {
+    "favicon": "",
+    "baseURL": "/blog",
+    "author": "Desdemona Wren",
+    "description": "Desdemona Wren, Author",
+    "keywords": "blog,personal,author,lgbt,lgbtqia+,lgbt author,gay literature,desdemona,wren,desdemona wren",
+    "paginate": 7,
+    "enable_mathjax": false,
+    "algolia_search": false,
+    "subtitle": "LGBTQIA+ Novelist",
+    "customImage": "images/icon.png",
+    "permanentTopNav": true,
+    "twitter": "https://twitter.com/wholesaleromato",
+    "tumblr": "https://wholesaleromance.tumblr.com"
+  },
+  "taxonomies": {
+    "author": "author",
+    "tag": "tags",
+    "category": "categories"
+  },
+  "outputs": {
+    "home": [ "HTML", "JSON" ],
+    "page": [ "HTML" ]
+  }
+}

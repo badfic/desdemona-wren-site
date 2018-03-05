@@ -6,7 +6,7 @@ featuredImage: "/images/blogheader1.png"
 categories: ['Bloom']
 tags: ['Bloom', 'Making of', 'teratophilia', 'LGBT', 'Trans']
 author: "Desdemona Wren"
-noSummary: true
+noSummary: false
 ---
 I’ve written a piece on my personal [writing process](https://wholesaleromance.tumblr.com/post/169417169175/anyways-heres-my-writing-process-thanks-for), but here’s what it was like to write **Bloom: A Monster Love Novella** from start to finish. 
 
