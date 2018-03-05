@@ -1,4 +1,5 @@
 {
+  "baseURL": "https://desdemonawren.com/blog",
   "title": "Desdemona Wren",
   "theme": "bilberry-hugo-theme",
   "enableRobotsTXT": true,
