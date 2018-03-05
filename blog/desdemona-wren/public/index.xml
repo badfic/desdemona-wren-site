@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Desdemona Wren</title>
+    <link>https://desdemonawren.com/blog/</link>
+    <description>Recent content on Desdemona Wren</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 04 Mar 2018 01:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://desdemonawren.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Making of Bloom: Part Two</title>
+      <link>https://desdemonawren.com/blog/article/making-of-bloom-part-two/</link>
+      <pubDate>Sun, 04 Mar 2018 01:00:00 -0800</pubDate>
+      
+      <guid>https://desdemonawren.com/blog/article/making-of-bloom-part-two/</guid>
+      <description>Formatting might actually be worse than writing and editing and cover design. I mean that with everything in me.
+Pro-tip: Before we start, you’re going to definitely want to have all your images at 300 DPI. If you don’t know how to do that, check out this tutorial.
+Right now I’m gonna tell you guys a secret. I literally am only releasing my book on Kindle or on Amazon because Amazon makes it a whole hell of a lot easier to format and publish books than anything else.</description>
+    </item>
+    
+    <item>
+      <title>The Making of Bloom: Part One</title>
+      <link>https://desdemonawren.com/blog/article/making-of-bloom-part-one/</link>
+      <pubDate>Thu, 01 Mar 2018 22:00:00 -0800</pubDate>
+      
+      <guid>https://desdemonawren.com/blog/article/making-of-bloom-part-one/</guid>
+      <description>I’ve written a piece on my personal writing process, but here’s what it was like to write Bloom: A Monster Love Novella from start to finish.
+Sometimes shit got real stressful, so if you’re thinking about writing a book, know this: it is not easy, you will cry real tears, and formatting is an absolute pain in the ass..
+It all started with an idea.
+Like most of my ideas, it was half-baked and sort of uttered once to one of my friends as a joke.</description>
+    </item>
+    
+    <item>
+      <title>Website Home</title>
+      <link>https://desdemonawren.com/blog/page/website-home/</link>
+      <pubDate>Wed, 01 Nov 2017 13:05:27 +0100</pubDate>
+      
+      <guid>https://desdemonawren.com/blog/page/website-home/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

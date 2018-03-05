@@ -4,7 +4,7 @@ date: 2018-03-01T22:00:00-08:00
 
 featuredImage: "/images/blogheader1.png"
 categories: ['Bloom']
-tags: ['Bloom', 'Making of', 'teratophilia', 'LGBT', 'Trans']
+tags: ['Bloom', 'Making of', 'teratophilia', 'LGBT', 'Transgender']
 author: "Desdemona Wren"
 noSummary: false
 ---
