@@ -98,6 +98,16 @@ gulp.task('minifyHtml', function() {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('distImg', function() {
+  return gulp.src('./img/**/*')
+    .pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('distFavicon', function() {
+  return gulp.src(['./*.png', 'browserconfig.xml', 'favicon.ico', 'site.webmanifest', 'safari-pinned-tab.svg'])
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('distJs', function() {
   return gulp.src('./js/*.min.js')
     .pipe(gulp.dest('dist/js'));
@@ -113,7 +123,7 @@ gulp.task('distVendor', function() {
     .pipe(gulp.dest('dist/vendor'));
 });
 
-gulp.task('dist', ['distJs', 'distCss', 'distVendor']);
+gulp.task('dist', ['distImg', 'distFavicon', 'distJs', 'distCss', 'distVendor']);
 
 // Default task
 gulp.task('default', ['css', 'js', 'minifyHtml', 'vendor', 'dist']);
