@@ -28,16 +28,6 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/bootstrap'))
 
-  // Font Awesome
-  gulp.src([
-      './node_modules/font-awesome/**/*',
-      '!./node_modules/font-awesome/{less,less/*}',
-      '!./node_modules/font-awesome/{scss,scss/*}',
-      '!./node_modules/font-awesome/.*',
-      '!./node_modules/font-awesome/*.{txt,json,md}'
-    ])
-    .pipe(gulp.dest('./vendor/font-awesome'))
-
   // jQuery
   gulp.src([
       './node_modules/jquery/dist/*',
@@ -108,8 +98,25 @@ gulp.task('minifyHtml', function() {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('distJs', function() {
+  return gulp.src('./js/*.min.js')
+    .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('distCss', function() {
+  return gulp.src('./css/*.min.css')
+    .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('distVendor', function() {
+  return gulp.src('./vendor/**/*')
+    .pipe(gulp.dest('dist/vendor'));
+});
+
+gulp.task('dist', ['distJs', 'distCss', 'distVendor']);
+
 // Default task
-gulp.task('default', ['css', 'js', 'minifyHtml', 'vendor']);
+gulp.task('default', ['css', 'js', 'minifyHtml', 'vendor', 'dist']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
