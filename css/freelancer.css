@@ -94,6 +94,15 @@ section h2 {
   line-height: 3.1rem;
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -332,11 +341,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: #EB5974;
+  color: #2C3E50;
 }
 
 a:focus, a:hover, a:active {
-  color: #e62b4e;
+  color: #6b0d1e;
 }
 
 .btn {
