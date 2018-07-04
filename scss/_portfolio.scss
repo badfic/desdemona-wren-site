@@ -1,6 +1,7 @@
 // Styling for the portfolio section
 .portfolio {
   margin-bottom: -15px;
+  background-color: $primary;
   .portfolio-item {
     position: relative;
     display: block;
@@ -54,9 +55,10 @@
     .portfolio-modal-dialog {
       min-height: 100vh;
       padding: 5rem;
-      margin: 3rem calc(3rem - 8px);
+      margin: 1rem calc(20rem - 8px);
+      font-size: 1.2em;
       h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
     }
   }
