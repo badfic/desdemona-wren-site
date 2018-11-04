@@ -171,6 +171,8 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+    height: 50%;
+    width: 50%;
   }
 }
 
