@@ -1,10 +1,10 @@
 // Bootstrap overrides for this template
 a {
-  color: $secondary;
+  color: $pink;
   &:focus,
   &:hover,
   &:active {
-    color: darken($primary, 40%);
+    color: $black;
   }
 }
 
@@ -17,15 +17,15 @@ a {
 }
 
 .bg-secondary {
-  background-color: $secondary !important;
+  background-color: $primary !important;
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $black !important;
 }
 
 .text-secondary {
-  color: $secondary !important;
+  color: $black !important;
 }
 
 .btn-primary {
@@ -39,13 +39,6 @@ a {
   }
 }
 
-.btn-secondary {
-  background-color: $secondary;
-  border-color: $secondary;
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: darken($secondary, 10%);
-    border-color: darken($secondary, 10%);
-  }
+.fa-bars {
+  color: $pink;
 }
