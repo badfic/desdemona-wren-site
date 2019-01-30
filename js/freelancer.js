@@ -72,4 +72,25 @@
     });
   });
 
+  $.get("https://shoppinglist.space/desdemona-wren/blog/feed.rss", function(data) {
+    var i = 1;
+    $(data).find("item").each(function() {
+      var el = $(this);
+
+      var title = el.find("title").text();
+      var description = el.find("description").text();
+      var link = el.find("link").text();
+      var imageUrl = el.find("media\\:thumbnail").attr("url");
+
+      if (imageUrl) {
+        $('#blog-roll-' + i).append('<a href="' + link + '"><img class="img-fluid" src="' + imageUrl + '"><h4>' + title + '</h4></a><p>' + description + '</p>');
+      } else {
+        $('#blog-roll-' + i).append('<a href="' + link + '"><img class="img-fluid" src="img/tumblr_logo.png"><h4>' + title + '</h4></a><p>' + description + '</p>');
+      }
+
+      i++;
+      return i <= 3;
+    })
+  });
+
 })(jQuery); // End of use strict
