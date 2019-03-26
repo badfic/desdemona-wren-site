@@ -39,6 +39,12 @@ section {
   height: 3.25rem;
   font-size: 1.25rem;
   line-height: 2rem;
+  color: $pink;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $black;
+  }
 }
 
 // Scroll to Top Button

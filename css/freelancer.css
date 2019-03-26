@@ -38,6 +38,11 @@ section h2 {
   height: 3.25rem;
   font-size: 1.25rem;
   line-height: 2rem;
+  color: #e41c3e;
+}
+
+.btn-social:hover, .btn-social:focus, .btn-social:active {
+  color: #000;
 }
 
 .scroll-to-top {
