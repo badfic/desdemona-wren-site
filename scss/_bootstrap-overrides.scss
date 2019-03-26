@@ -28,14 +28,18 @@ a {
   color: $black !important;
 }
 
+.text-pink {
+  color: $pink !important;
+}
+
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+  background-color: $pink;
+  border-color: $pink;
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($primary, 10%);
-    border-color: darken($primary, 10%);
+    background-color: $black;
+    border-color: $black;
   }
 }
 

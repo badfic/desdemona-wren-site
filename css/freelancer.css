@@ -250,14 +250,18 @@ a:focus, a:hover, a:active {
   color: #000 !important;
 }
 
+.text-pink {
+  color: #e41c3e !important;
+}
+
 .btn-primary {
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #e41c3e;
+  border-color: #e41c3e;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #dae0e5;
-  border-color: #dae0e5;
+  background-color: #000;
+  border-color: #000;
 }
 
 .fa-bars {
