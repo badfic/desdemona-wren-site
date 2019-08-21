@@ -10,5 +10,5 @@ RUN npm install -g gulp
 RUN npm install
 RUN gulp default
 
-FROM halverneus/static-file-server:v1.6.5
-COPY --from=build /app/dist /web
+FROM nginx:1-alpine
+COPY --from=build /app/dist /usr/share/nginx/html
