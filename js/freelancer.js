@@ -72,7 +72,7 @@
     });
   });
 
-  $.get("https://blogfeed.desdemonawren.com/", function(data) {
+  $.get("https://blog.desdemonawren.com/rss", function(data) {
     var i = 1;
     $(data).find("item").each(function() {
       var el = $(this);
