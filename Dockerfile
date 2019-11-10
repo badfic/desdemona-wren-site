@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN npm install -g gulp
+RUN npm install -g gulp@3.9.1
 RUN npm install
 RUN gulp default
 
