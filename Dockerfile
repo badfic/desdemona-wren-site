@@ -1,4 +1,4 @@
-FROM node:lts as build
+FROM node:10-jessie as build
 
 RUN mkdir -p /app
 
