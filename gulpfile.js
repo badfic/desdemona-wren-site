@@ -18,7 +18,7 @@ var banner = ['/*!\n',
 ].join('');
 
 // Copy third party libraries from /node_modules into /vendor
-gulp.task('vendor', function() {
+gulp.task('vendor', function(cb) {
 
   // Bootstrap
   gulp.src([
@@ -47,10 +47,10 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/magnific-popup'))
 
+    cb();
 });
 
-// Compile SCSS
-gulp.task('css:compile', function() {
+gulp.task('compileCss', function() {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass.sync({
       outputStyle: 'expanded'
@@ -58,8 +58,7 @@ gulp.task('css:compile', function() {
     .pipe(gulp.dest('./css'))
 });
 
-// Minify CSS
-gulp.task('css:minify', ['css:compile'], function() {
+gulp.task('minifyCss', function() {
   return gulp.src([
       './css/*.css',
       '!./css/*.min.css'
@@ -72,11 +71,9 @@ gulp.task('css:minify', ['css:compile'], function() {
     .pipe(browserSync.stream());
 });
 
-// CSS
-gulp.task('css', ['css:compile', 'css:minify']);
+gulp.task('css', gulp.series('compileCss', 'minifyCss'));
 
-// Minify JavaScript
-gulp.task('js:minify', function() {
+gulp.task('minifyJs', function() {
   return gulp.src([
       './js/*.js',
       '!./js/*.min.js'
@@ -88,9 +85,6 @@ gulp.task('js:minify', function() {
     .pipe(gulp.dest('./js'))
     .pipe(browserSync.stream());
 });
-
-// JS
-gulp.task('js', ['js:minify']);
 
 gulp.task('minifyHtml', function() {
   return gulp.src('*.html')
@@ -123,10 +117,10 @@ gulp.task('distVendor', function() {
     .pipe(gulp.dest('dist/vendor'));
 });
 
-gulp.task('dist', ['distImg', 'distFavicon', 'distJs', 'distCss', 'distVendor']);
+gulp.task('dist', gulp.series('distImg', 'distFavicon', 'distJs', 'distCss', 'distVendor'));
 
 // Default task
-gulp.task('default', ['css', 'js', 'minifyHtml', 'vendor', 'dist']);
+gulp.task('default', gulp.series('css', 'minifyJs', 'minifyHtml', 'vendor', 'dist'));
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -138,8 +132,8 @@ gulp.task('browserSync', function() {
 });
 
 // Dev task
-gulp.task('dev', ['css', 'js', 'browserSync'], function() {
+gulp.task('dev', gulp.series('css', 'minifyJs', 'browserSync', function() {
   gulp.watch('./scss/*.scss', ['css']);
-  gulp.watch('./js/*.js', ['js']);
+  gulp.watch('./js/*.js', ['minifyJs']);
   gulp.watch('./*.html', browserSync.reload);
-});
+}));

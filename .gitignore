@@ -1,3 +1,4 @@
 node_modules
 dist
 js/freelancer.min.js
+vendor
