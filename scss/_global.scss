@@ -34,20 +34,17 @@ section {
 }
 
 .button-pink {
-    background-color: #e41c3e;
-    border: 2px;
-    border-color: #fff;
-    border-radius: 10px;
-    color: #fff;
-    padding: 1em;
+    background-color: $pink;
+    color: $white;
     margin: 0 auto;
-    float: none;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 21px;
+    text-transform: capitalize;
+    font-size: 2em;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($color: $pink, $amount: 20);
+      color: $white;
+    }
   }
 
 // Custom Rounded Social Button
