@@ -2,7 +2,7 @@
   "name": "desdemona-wren-site",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "dev": "parcel index.html about.html all-books.html --no-cache",
     "build": "parcel build index.html about.html all-books.html --no-cache"
@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/badfic/desdemona-wren-site#readme",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.23.7"
   },

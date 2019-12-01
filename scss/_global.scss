@@ -79,6 +79,15 @@ section {
   width: 1em;
   height: 1em;
   stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  stroke: $pink;
+  fill: $pink;
+
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
 }
