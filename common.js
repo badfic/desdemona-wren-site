@@ -1,6 +1,6 @@
 import 'bootstrap';
 import '@fortawesome/fontawesome-free/css/all.css';
-import './main.scss';
+import './scss/main.scss';
 import $ from 'jquery';
 import 'jquery.easing';
 
