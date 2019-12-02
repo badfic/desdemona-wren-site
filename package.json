@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html about.html all-books.html --no-cache",
-    "build": "parcel build index.html about.html all-books.html --no-cache"
+    "dev": "parcel index.html about.html --no-cache",
+    "build": "parcel build index.html about.html --no-cache"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,6 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
-    "jquery.easing": "^1.4.1",
     "popper.js": "^1.16.0"
   }
 }

@@ -1,4 +1,8 @@
 // Typography
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   @include body-font;
 }
@@ -58,19 +62,6 @@ section {
   &:focus,
   &:active {
     color: $black;
-  }
-}
-
-// Scroll to Top Button
-.scroll-to-top {
-  z-index: 1042;
-  right: 1rem;
-  bottom: 1rem;
-  display: none;
-  a {
-    width: 3.5rem;
-    height: 3.5rem;
-    line-height: 3.1rem;
   }
 }
 
