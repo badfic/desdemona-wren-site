@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html about.html --no-cache --open",
-    "build": "parcel build index.html about.html --no-cache"
+    "dev": "wmr",
+    "build": "wmr build",
+    "serve": "wmr serve"
   },
   "repository": {
     "type": "git",
@@ -13,14 +14,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/badfic/desdemona-wren-site/issues"
   },
   "homepage": "https://github.com/badfic/desdemona-wren-site#readme",
   "devDependencies": {
-    "parcel-bundler": "1.12.4",
-    "sass": "1.27.1"
+    "wmr": "1.6.0",
+    "sass": "1.32.11"
   },
   "dependencies": {
     "bootstrap": "4.5.3",
