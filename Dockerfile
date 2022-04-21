@@ -1,4 +1,4 @@
-FROM quay.io/badfic/node:12 as build
+FROM quay.io/badfic/node:12-alpine as build
 COPY . .
 
 RUN npm install
