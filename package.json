@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/badfic/desdemona-wren-site#readme",
   "devDependencies": {
-    "wmr": "1.6.0",
+    "wmr": "3.8.0",
     "sass": "1.32.11"
   },
   "dependencies": {
