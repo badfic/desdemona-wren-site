@@ -10,14 +10,9 @@ $.get("https://blog.tallsdoe.com/feed.xml", function (data) {
         var title = el.find("title").text();
         var descriptionArr = el.find("content").text().split(" ")
         var descriptionWords = descriptionArr.slice(0, Math.min(descriptionArr.length - 1, 30)).join(" ");
-        var link = el.find("link").text();
-        var imageUrl = el.find("media\\:thumbnail").attr("url");
+        var link = "https://blog.tallsdoe.com" + el.find("link").text();
 
-        if (imageUrl) {
-            $('#blog-roll-' + i).append('<a href="' + link + '"><img class="img-fluid" src="' + imageUrl + '"><h4>' + title + '</h4></a><p>' + descriptionWords + '...</p>');
-        } else {
-            $('#blog-roll-' + i).append('<a href="' + link + '"><img class="img-fluid" src="' + tumblrLogoUrl + '"><h4>' + title + '</h4></a><p>' + descriptionWords + '...</p>');
-        }
+        $('#blog-roll-' + i).append('<a href="' + link + '"><img class="img-fluid" src="' + tumblrLogoUrl + '"><h4>' + title + '</h4></a><p>' + descriptionWords + '...</p>');
 
         i++;
         return i <= 3;
