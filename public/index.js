@@ -2,13 +2,13 @@ import './common';
 import $ from 'jquery';
 import tumblrLogoUrl from './img/tumblr_logo.png';
 
-$.get("https://blog.desdemonawren.com/rss", function (data) {
+$.get("https://blog.tallsdoe.com/feed.xml", function (data) {
     var i = 1;
-    $(data).find("item").each(function () {
+    $(data).find("entry").each(function () {
         var el = $(this);
 
         var title = el.find("title").text();
-        var descriptionArr = el.find("content\\:encoded").text().split(" ")
+        var descriptionArr = el.find("content").text().split(" ")
         var descriptionWords = descriptionArr.slice(0, Math.min(descriptionArr.length - 1, 30)).join(" ");
         var link = el.find("link").text();
         var imageUrl = el.find("media\\:thumbnail").attr("url");
