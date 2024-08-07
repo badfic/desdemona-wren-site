@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "wmr",
-    "build": "wmr build",
-    "serve": "wmr serve"
+    "dev": "vite dev public",
+    "build": "vite build public"
   },
   "repository": {
     "type": "git",
@@ -20,12 +19,12 @@
   },
   "homepage": "https://github.com/badfic/desdemona-wren-site#readme",
   "devDependencies": {
-    "wmr": "3.8.0",
-    "sass": "1.32.11"
+    "vite": "5.3.5",
+    "sass": "1.77.8"
   },
   "dependencies": {
-    "bootstrap": "4.5.3",
-    "jquery": "3.5.1",
+    "bootstrap": "4.6.2",
+    "jquery": "3.7.1",
     "popper.js": "1.16.1"
   }
 }
