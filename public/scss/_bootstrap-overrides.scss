@@ -24,6 +24,15 @@ a {
   color: $black !important;
 }
 
+.jumbotron {
+  background-color: $pink;
+  color: $white;
+  
+  .row {
+    align-items: center;
+  }
+}
+
 .text-secondary {
   color: $black !important;
 }
