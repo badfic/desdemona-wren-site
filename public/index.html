@@ -90,8 +90,14 @@
         </a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto justify-content-end">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#books">Books</a>
+            <li class="nav-item dropdown mx-0 mx-lg-1">
+              <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" href="#" id="booksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+              <div class="dropdown-menu" aria-labelledby="booksDropdown">
+                <a class="dropdown-item" href="#knavery">Knavery</a>
+                <a class="dropdown-item" href="#punchline">Punchline</a>
+                <a class="dropdown-item" href="#books">Bloom</a>
+                <a class="dropdown-item" href="#books">Marjorie Diaz Series</a>
+              </div>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded" href="/about.html">About</a>
@@ -107,17 +113,48 @@
       </div>
     </nav>
 
-    <!-- Books Grid Section -->
-    <section class="portfolio" id="new-releases">
-      <div class="container jumbotron">
-        <div class="row">
+    <!-- Preorder Section -->
+    <section class="portfolio knavery text-white" id="knavery">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <h2 class="text-titlecase mb-0 text-center">Preorder Knavery Now!</h2>
+            <br/>
+            <br/>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg">
+            <img class="img-fluid" src="img/knavery-temporary-cover.png" alt="Knavery book cover. Cover will be revealed November 11th. Preorder now!"/>
+          </div>
+          <div class="col-lg position-relative">
+            <blockquote class="blockquote">
+              <p>
+                <b>KNOCK, KNOCK </b> — <i>Who's there? It's Johnny!</i>.
+                <br/><br/>
+                Johnny makes the trek back to his home in Liverpool. Exhausted from his time spent bumming around London. Unlike Antonio, he doesn't have any hard or fast rules about sleeping alone. Or, at least, that's what he tells himself. 
+                <br/><br/>
+                Enter, Amira, a gorgeous, rich, American influencer stuck in some local watering hole on the wrong side of the tracks. Draped head-to-toe in a stunning floor-length artfully sheer Chanel gown. One that Johnny might not mind seeing bunched up into a nondescript puddle on his flat's floor.
+                <br/><br/>
+              </p>
+            </blockquote>
+            <a target="_blank" href="https://www.amazon.com/dp/B0G2ZP9M47"><img class="img-fluid" src="img/buy-on-amazon.png" alt="Available on Amazon"/></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Releases Section -->
+    <section class="portfolio new-releases text-white" id="punchline">
+      <div class="container">
+        <div class="row align-items-center">
           <div class="col-12">
             <h2 class="text-titlecase mb-0 text-center">New Releases</h2>
             <br/>
             <br/>
           </div>
         </div>
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg">
             <img class="img-fluid" src="img/punchline-cover.png" alt="Punchline Erotic Novel cover. Two men walk into a bar, stop me if you've heard this one before. Man drinking at bar staring at another man in a trenchcoat smoking with his back turned."/>
           </div>
@@ -141,7 +178,7 @@
     </section>
 
     <!-- Books Grid Section -->
-    <section class="portfolio" id="books">
+    <section class="portfolio books" id="books">
       <div class="container">
         <div class="row">
           <div class="col-12">

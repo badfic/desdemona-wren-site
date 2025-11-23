@@ -1,7 +1,40 @@
 #mainNav {
     @include heading-font;
+    background-color: $pink;
+    color: $white;
+
+    .nav-link,
+    .navbar-brand {
+        color: $white !important;
+    }
+
+    /* Restore hover behavior: top-level nav links turn $black on hover/focus */
+    .nav-link:hover,
+    .nav-link:focus {
+        color: $pink !important;
+        background-color: $white;
+    }
+
+    .icon {
+        fill: $white;
+    }
 }
 
 .navbar-brand {
     font-size: 2em;
+}
+
+/* Dropdown adjustments to match navbar colors */
+.navbar .dropdown-menu {
+    background-color: $pink;
+    border: none;
+}
+
+.navbar .dropdown-item {
+    color: $white;
+}
+
+.navbar .dropdown-item:focus,
+.navbar .dropdown-item:hover {
+    color: $pink;
 }
